@@ -38,7 +38,7 @@ a {
 .card {
   background-color: var(--white);
   min-height: 522px;
-  width: 384px;
+  max-width: 384px;
   text-align: left;
   display: flex;
   justify-content: center;
@@ -52,8 +52,8 @@ a {
 }
 
 .card-img {
-  width: 336px;
-  height: 200px;
+  max-width: 336px;
+  min-height: 200px;
 }
 
 .text {
@@ -68,6 +68,7 @@ a {
   font-size: 1rem;
   font-weight: 500;
   color: var(--gray-500);
+  line-height: 1.6;
 }
 
 .text h2 {
@@ -82,7 +83,7 @@ a {
 }
 
 .text h4 {
-  font-weight: 400;
+  font-weight: 500;
   font-size: 0.9rem;
   color: var(--gray-950);
 }
@@ -104,10 +105,8 @@ a {
   font-size: 0.9rem;
 }
 
-.card-heading:hover,
-.card-heading h3:hover {
-  background-color: var(--gray-950);
-  color: var(--yellow);
+.card-heading:hover {
+  background-color: hsla(47, 88%, 48%);
   cursor: pointer;
 }
 
@@ -138,7 +137,6 @@ a {
 }
 
 .developer h5 {
-  font-family: inherit;
   font-size: 0.9rem;
   font-weight: 800;
   color: var(--gray-950);
